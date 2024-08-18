@@ -21,7 +21,7 @@ let students ={
 }
  */
 
-//literval way 
+//literal way 
 
 const student = {
     name:"John",
@@ -57,10 +57,10 @@ console.log(`my name is ${name}`) */ // my name is Naqvi
 
 
 
-// for in (non-iterable object) Object
-// for of (iterable object) Array / String
+// for in (non-iterable) Object
+// for of (iterable) Array / String
 
-// Iterable object
+// Iterables
 
 // [1,2,3,4]
 // string
@@ -105,7 +105,7 @@ for(let i = 0 ; i< keys.length ; i++){
     console.log(car[keys[i]])
 }
 
-console.log(Object.entries(car))
+/* console.log(Object.entries(car)) */
 
 
 
@@ -189,7 +189,7 @@ let studentObject =  {
     }
 }
 
-let copyStudentObject = {...studentObject} // shallow clobe
+let copyStudentObject = {...studentObject} // shallow clone
 
 console.log(copyStudentObject)
 console.log(studentObject)
