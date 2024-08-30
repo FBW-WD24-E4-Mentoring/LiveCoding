@@ -2,11 +2,14 @@
 
 const myName = "Joseph";
 
-console.log(myName.length);
+myName.concat(" Smith");
+
+console.log(myName);
+/* console.log(myName.length);
 
 console.log(myName.slice(0, 3));
 
-console.log(myName.repeat(10));
+console.log(myName.repeat(10)); */
 
 /* console.log(myName[1]);
 
