@@ -71,20 +71,67 @@ if (
  */
 
 const prompt = inquirer.createPromptModule();
-prompt([
+
+/* prompt([
+  {
+    name: "operation",
+    type: "list",
+    message: "Choose your operation:",
+    choices: ["ADD", "SUBTRACT", "DIVIDE", "MODULUS", "RATIO"],
+  },
+]).then((answer) => {
+  if (answer.operation === "RATIO") {
+    prompt([
+      {
+        name: "number1",
+        type: "number",
+        message: "Please enter your first number : ",
+      },
+      {
+        name: "number2",
+        type: "number",
+        message: "Please enter your second number : ",
+      },
+      {
+        name: "number3",
+        type: "number",
+        message: "Please enter your third number : ",
+      },
+    ]).then((allnumbers) => {
+      console.log(allnumbers);
+    });
+  } else {
+    prompt([
+      {
+        name: "number1",
+        type: "input",
+        message: "Please enter your first number : ",
+      },
+      {
+        name: "number2",
+        type: "input",
+        message: "Please enter your second number : ",
+      },
+    ]).then((allnumbers) => {
+      console.log(allnumbers);
+    });
+  }
+}); */
+
+/* prompt([
   {
     name: "number1",
-    type: "input",
+    type: "number",
     message: "Please enter your first number : ",
   },
   {
     name: "number2",
-    type: "input",
+    type: "number",
     message: "Please enter your send number : ",
   },
   {
     name: "operation",
-    type: "list",
+    type: "rawlist",
     message: "Choose your operation:",
     choices: ["ADD", "SUBTRACT", "DIVIDE", "MODULUS"],
   },
@@ -92,8 +139,41 @@ prompt([
   const { number1, number2, operation } = answer;
 
   if (operation === "ADD") {
-    console.log(calc.add(+number1, +number2));
+    console.log(calc.add(number1, number2));
   } else if (operation === "DIVIDE") {
-    console.log(calc.divide(+number1, +number2));
+    console.log(calc.divide(number1, number2));
   }
 });
+ */
+
+/* prompt([
+  {
+    name: "operation",
+    type: "select",
+    message: "Choose your operation:",
+    choices: ["ADD", "SUBTRACT", "DIVIDE", "MODULUS", "RATIO"],
+  },
+]).then((answer) => {
+  console.log(answer);
+}); */
+
+/* async await and .then  => work with promises*/
+
+let attacks = ["lighting", "firing", "bombing"];
+
+let randomNumber = Math.floor(Math.random() * attacks.length);
+
+/* attacks[randomNumber]
+
+attacks["firing"]
+
+attacks[randomNumber]; */
+
+/* setTimeout(()=>{
+   pikachu.attack("lighting", squirtle); 
+},1000)
+
+setTimeout(() => {
+  squirtle.attack("waterPulse", pikachu);
+}, 1000);
+ */
