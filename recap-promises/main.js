@@ -167,3 +167,5 @@ fetch("https://pokeapi.co/api/v2/pokemon")
 axios("https://pokeapi.co/api/v2/pokemon").then((response) =>
   response.data.results.forEach((pokemon) => console.log(pokemon.name))
 ); */
+
+//async await (way to work with promises)
